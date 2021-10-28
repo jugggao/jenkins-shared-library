@@ -1,0 +1,70 @@
+Jenkins Plugins
+===============
+
+01. Pipeline Utility Steps
+    https://www.jenkins.io/doc/pipeline/steps/pipeline-utility-steps/
+
+02. Timestamper
+    https://plugins.jenkins.io/timestamper/
+
+03. AnsiColor
+    https://plugins.jenkins.io/ansicolor/
+
+04. build user vars
+    https://plugins.jenkins.io/build-user-vars-plugin/
+    https://www.jenkins.io/doc/pipeline/steps/build-user-vars-plugin/
+    https://javadoc.jenkins.io/plugin/build-user-vars-plugin/
+
+05. SonarQube Scanner
+    Webhook: https://ci.ambow.com/sonarqube-webhook/
+    https://plugins.jenkins.io/sonar/
+    https://www.jenkins.io/doc/pipeline/steps/sonar/
+    https://javadoc.jenkins.io/plugin/sonar/
+    https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/
+    https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
+    https://www.jenkins.io/doc/pipeline/steps/sonar/
+
+06. HTTP Request
+    https://plugins.jenkins.io/http_request/
+    https://www.jenkins.io/doc/pipeline/steps/http_request/
+
+07. Kubernetes
+    https://plugins.jenkins.io/kubernetes/
+
+08. Git
+    https://plugins.jenkins.io/git/
+
+09. Configuration as Code
+    https://plugins.jenkins.io/configuration-as-code/
+
+10. HashiCorp Vault
+    https://plugins.jenkins.io/hashicorp-vault-plugin/
+
+11. Active Directory
+    https://plugins.jenkins.io/active-directory
+    Domain Name: ambow.com
+    Domain controller: 10.10.113.100:389
+    Site: ''
+    Bind DN: CN=ldap,OU=安博教育,DC=ambow,DC=com
+    Password: Ambow99999999
+
+12. Role-based Authorization Strategy
+    https://plugins.jenkins.io/role-strategy/
+
+13. Authorize Project
+    https://plugins.jenkins.io/authorize-project/
+
+14. Extended Choice Parameter
+    https://plugins.jenkins.io/extended-choice-parameter/
+
+15. Active Choices Parameter
+    https://plugins.jenkins.io/uno-choice/
+
+16. List Git Branches Parameter
+    https://plugins.jenkins.io/list-git-branches-parameter/
+
+17. Xcode integration
+    https://plugins.jenkins.io/xcode-plugin/
+
+18. Upload to pgyer
+    https://www.pgyer.com/doc/view/jenkins_plugin

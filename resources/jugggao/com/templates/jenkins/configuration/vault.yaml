@@ -1,0 +1,21 @@
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+        - vaultUsernamePasswordCredentialImpl:
+            description: "Vault: Gitlab Jenkins Authentication"
+            engineVersion: 2
+            id: "gitlab-jenkins"
+            passwordKey: "password"
+            path: "jenkins/gitlab-jenkins"
+            scope: GLOBAL
+            usernameKey: "username"
+        - vaultSSHUserPrivateKeyImpl:
+            description: "Vault: SSH Build Node Authentication"
+            engineVersion: 2
+            id: "ssh-build-node"
+            passphraseKey: "passphrase"
+            path: "jenkins/ssh-build-node"
+            privateKeyKey: "private_key"
+            scope: GLOBAL
+            usernameKey: "username"

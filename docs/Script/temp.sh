@@ -1,0 +1,3 @@
+
+for i in $(cat /opt/job-config); do curl -s --request POST --data-binary @config.xml -H "Content-Type:text/xml" "https://ci.ambow.com/job/middle-platform/createItem?name=release_$i" --user peng.gao:11fb1051e463c48ad049de7c7f99d26b30; done
+for i in $(cat /opt/job-config); do curl -s --request POST "https://ci.ambow.com/job/middle-platform/view/后端发版/addJobToView?name=release_$i" --user peng.gao:11fb1051e463c48ad049de7c7f99d26b30; done

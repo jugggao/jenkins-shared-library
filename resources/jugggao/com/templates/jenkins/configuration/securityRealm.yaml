@@ -1,0 +1,14 @@
+jenkins:
+  securityRealm:
+    activeDirectory:
+      bindPassword: "{AQAAABAAAAAQcWDKl0+mUk0CVoevMb7nekKYyzj91VGhuVKCB9kAn8g=}"
+      customDomain: true
+      domains:
+      - bindName: "CN=Gao\\, Peng,OU=IT运维部,OU=信息技术与服务中心,OU=安博教育,DC=ambow,DC=com"
+        bindPassword: "{AQAAABAAAAAQJGm2pafkOPFCAudjUVJUg2GvzCf2yU+Map3s0sy3J2E=}"
+        name: "ambow.com"
+        servers: "10.10.113.100:3268"
+        tlsConfiguration: TRUST_ALL_CERTIFICATES
+      groupLookupStrategy: AUTO
+      removeIrrelevantGroups: false
+      startTls: true

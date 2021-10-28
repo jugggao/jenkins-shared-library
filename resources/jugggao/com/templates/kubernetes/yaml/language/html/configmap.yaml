@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-name
+  namespace: default
+  labels:
+    app: app-name
+data:
+  default.conf: |-
+      server {
+          listen       80;
+          server_name  localhost;
+
+          client_max_body_size 2000m;
+
+          location / {
+              root   /data/app;
+              index  index.html index.htm;
+          }
+
+          location /api/ {
+              proxy_pass http://gateway.base-service:20000/;
+          }
+
+          location /actuator/health {
+              add_header Content-Type "text/plain;charset=utf-8";
+              return 200 "ok";
+          }
+
+          error_page   500 502 503 504  /50x.html;
+          location = /50x.html {
+              root   /data/app;
+          }
+
+          location ~* \.(eot|otf|ttf|woff|svg)$ {
+              root /data/app;
+              add_header Access-Control-Allow-Origin *;
+          }
+
+          location ~* .(doc|sql|gz|svn|git)$ {
+              deny all;
+          }
+      }

@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  labels:
+    app: app-name
+  name: app-name
+  namespace: default
+spec:
+  ingressClassName: public
+  rules:
+  - host: www.example.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: app-name
+            port:
+              number: 80
+#  tls:
+#  - host:
+#    - www.example.com
+#    secretName: ambow-tls

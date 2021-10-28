@@ -1,0 +1,14 @@
+jenkins:
+  nodes:
+  - permanent:
+      labelString: "build"
+      launcher:
+        ssh:
+          credentialsId: "ssh-10.10.115.105-root"
+          host: "10.10.115.105"
+          port: 22
+          sshHostKeyVerificationStrategy: "nonVerifyingKeyVerificationStrategy"
+      name: "build"
+      numExecutors: 13
+      remoteFS: "/data/jenkins"
+      retentionStrategy: "always"
